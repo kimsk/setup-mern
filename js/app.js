@@ -5,7 +5,7 @@ class Mern extends React.Component {
   render(){
     return (
       <h1>Mongo, Express, React, NodeJS</h1>
-    )
+    );
   }
 }
 
