@@ -48,3 +48,22 @@ module:{
 
 ## MongoDB
 `npm install mongodb --save`
+
+
+## Mocha & eslint
+
+`nmp install mocha eslint babel-eslint --save-dev`
+
+```
+"scripts": {
+  "start": "./node_modules/.bin/babel-node --presets es2015,stage-0 -- server.js",
+  "test": "./node_modules/.bin/mocha --compilers js:babel-core/register tests",
+  "lint": "./node_modules/.bin/eslint web.config.js js"
+},
+```
+
+### Run mocha
+`npm test`
+
+### Run eslint
+`npm run lint`

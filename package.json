@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "start": "./node_modules/.bin/babel-node --presets es2015,stage-0 -- server.js",
-    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register tests"
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register tests",
+    "lint": "./node_modules/.bin/eslint web.config.js js"
   },
   "repository": {
     "type": "git",
