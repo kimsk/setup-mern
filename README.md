@@ -38,7 +38,7 @@ module:{
 ### package.json
 ```
 "scripts": {
-  "start": "./node_modules/.bin/babel-node --presets es2015,stage-0 -- server.js"
+  "server": "./node_modules/.bin/babel-node --presets es2015,stage-0 -- server.js"
 },
 ```
 
@@ -67,3 +67,16 @@ module:{
 
 ### Run eslint
 `npm run lint`
+
+## Put it together
+
+```
+"scripts": {
+  "start": "npm run lint & npm run test & npm run server",
+  "test": "./node_modules/.bin/mocha --compilers js:babel-core/register tests",
+  "server": "./node_modules/.bin/babel-node --presets es2015,stage-0 -- server.js",
+  "lint": "./node_modules/.bin/eslint web.config.js js"
+},
+```
+
+`./node_modules/.bin/nodemon`
