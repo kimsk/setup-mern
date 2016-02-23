@@ -68,7 +68,7 @@ module:{
 ### Run eslint
 `npm run lint`
 
-## Put it together
+## Put together
 
 ```
 "scripts": {
