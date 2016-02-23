@@ -68,7 +68,7 @@ module:{
 ### Run eslint
 `npm run lint`
 
-## Put together
+## Put together for Development mode
 
 ```
 "scripts": {
@@ -83,3 +83,32 @@ module:{
 ```
 
 `./node_modules/.bin/nodemon`
+
+## Production
+
+### Run node in Production mode
+`export NODE_ENV=production`
+
+### Enable GZip for express
+`npm install compression --save`
+
+```
+import compression from 'compression';
+...
+app.use(compression());
+```
+
+### Transpile with Babel (Don't use babel-node)
+`"build-server": "./node_modules/.bin/babel server.js -d build",`
+
+#### babel-polyfill
+
+- automatically loaded with babel-node
+- required for async/await
+
+`npm install babel-polyfill --save`
+
+`import "babel-polyfill";`
+
+#### start server
+`node ./build/server.js`
