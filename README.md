@@ -65,6 +65,11 @@ module:{
 ### Run mocha
 `npm test`
 
+_note:_ 
+1. `mocha --compilers js:babel-core/register` _uses babel to compile test before running tests_.
+2. if tests need `stage-0` feature, add `stage-0` to `.babelrc`
+3. `import 'babel-polyfill'` might be required.
+
 ### Run eslint
 `npm run lint`
 
