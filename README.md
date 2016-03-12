@@ -91,6 +91,22 @@ _note:_
 
 ## Production
 
+### Transpile with Babel (Don't use babel-node)
+`"build-server": "./node_modules/.bin/babel server.js -d build",`
+
+#### babel-polyfill
+
+- add `stage-0` to `.babelrc`
+- automatically loaded with babel-node
+- required for async/await
+
+`npm install babel-polyfill --save`
+
+`import "babel-polyfill";`
+
+#### start server
+`node ./build/server.js`
+
 ### Run node in Production mode
 `export NODE_ENV=production`
 
@@ -103,17 +119,3 @@ import compression from 'compression';
 app.use(compression());
 ```
 
-### Transpile with Babel (Don't use babel-node)
-`"build-server": "./node_modules/.bin/babel server.js -d build",`
-
-#### babel-polyfill
-
-- automatically loaded with babel-node
-- required for async/await
-
-`npm install babel-polyfill --save`
-
-`import "babel-polyfill";`
-
-#### start server
-`node ./build/server.js`
