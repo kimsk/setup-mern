@@ -10,7 +10,7 @@ https://www.npmjs.com/package/babel-loader
 
 `npm install react react-dom --save`
 
-### webpack.config.js
+### [webpack.config.js](https://github.com/kimsk/setup-mern/blob/master/webpack.config.js)
 ```
 module:{
   loaders: [
