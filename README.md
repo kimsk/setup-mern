@@ -52,7 +52,7 @@ module:{
 
 ## Mocha & eslint
 
-`nmp install mocha eslint babel-eslint --save-dev`
+`npm install mocha eslint babel-eslint --save-dev`
 
 ```
 "scripts": {
