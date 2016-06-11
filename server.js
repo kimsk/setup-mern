@@ -2,7 +2,7 @@ import express from 'express';
 import { MongoClient } from 'mongodb';
 
 let app = express();
-const port = 3000;
+const port = 3000
 
 app.use(express.static('public'));
 

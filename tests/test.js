@@ -14,21 +14,21 @@ describe('es6 tests', () => {
        let c = Object.assign(a, b);
        assert.equal(a, c);
    });
-   
+
    let p = new Promise((resolve, reject) => {
            setTimeout(
                () => {
                     resolve(true);
                 }, 0);
         });
-   
+
    it('Promise works', (done) => {
         p.then((value) => {
             assert.equal(value, true);
             done();
         });
    });
-   
+
    it('async works', (done) => {
        (async () => {
            let value = await p;
