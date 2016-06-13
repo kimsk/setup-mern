@@ -3,6 +3,10 @@
 ## NodeJS
 `npm init`
 
+or 
+
+`npm init --force`
+
 ## Client (React, Babel, & Webpack)
 https://www.npmjs.com/package/babel-loader
 
