@@ -15,7 +15,7 @@ https://www.npmjs.com/package/babel-loader
 `npm install react react-dom --save`
 
 ### [webpack.config.js](https://github.com/kimsk/setup-mern/blob/master/webpack.config.js)
-```
+```js
 module:{
   loaders: [
     {
@@ -40,7 +40,7 @@ module:{
 `npm install babel-cli nodemon --save-dev`
 
 ### package.json
-```
+```json
 "scripts": {
   "server": "./node_modules/.bin/babel-node --presets es2015,stage-0 -- server.js"
 },
@@ -58,7 +58,7 @@ module:{
 
 `npm install mocha eslint babel-eslint --save-dev`
 
-```
+```json
 "scripts": {
   "start": "./node_modules/.bin/babel-node --presets es2015,stage-0 -- server.js",
   "test": "./node_modules/.bin/mocha --compilers js:babel-core/register tests",
@@ -80,7 +80,7 @@ _note:_
 
 ## Put together for Development mode
 
-```
+```json
 "scripts": {
   "start": "npm run clean && npm run lint && npm run webpack && npm run test && npm run server",
   "test": "./node_modules/.bin/mocha --reporter nyan --compilers js:babel-core/register tests",
