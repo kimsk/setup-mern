@@ -66,6 +66,10 @@ module:{
 },
 ```
 
+[.eslintrc](https://github.com/kimsk/setup-mern/blob/master/.eslintrc)
+
+#### Note: ask eslint to ignore files by adding `.eslintignore`
+
 ### Run mocha
 `npm test`
 
